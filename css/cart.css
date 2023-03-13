@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: rgb(54, 48, 48);
+}
+*::after,*::before{
+    box-sizing: border-box;
+
+}
+
+#wapper{
+    width: 100%;
+    height: 100vh;
+}
+#header{
+	width: 100%;
+	height: 100%;
+}
+
+#header .navbar .header_top{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    background-color:rgb(66, 197, 237);
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+	left: 0;
+	right: 0;
+}
+/*
+    menu chính
+*/
+#header .navbar .header_top a{
+    text-decoration: none;
+}
+#header .navbar .header_top .collapse {
+    display: flex;
+    padding: 0px 0px 0px 250px;
+   font-size: 18px;
+   
+}
+#header .header_top .collapse .nav-item li{
+    list-style: none;
+    margin: 0px 25px;
+}
+/* hover sub_menu*/
+#header .navbar .header_top .collapse .nav-item li .sub-menu {
+    position: absolute;
+    visibility: hidden;
+    top: 50px;
+}
+#header .navbar .header_top .collapse .nav-item li:hover .sub-menu {
+    visibility: initial;
+    top: 70px;
+    transition: 0.3s;
+}
+/*
+color sub_menu
+*/
+#header .header_top .collapse .nav-item li .sub-menu  li{
+    border: 1px solid rgb(54, 48, 48);
+    width: 180px;
+    padding: 10px 0px 10px 25px;
+    margin-top: 3px;
+    background-color: rgb(66, 197, 237);
+}
+/*
+    user:
+*/
+#header .header_top .user{
+    display: flex;
+    right: 0;
+}
+#header .header_top .user .item{
+    margin: 0px 40px;
+    display: inline-block;
+    margin-left:0px 30px;
+   
+}
+#header .header_top .user .item .bx-user{
+    margin-top: 30px;
+}
+#header .header_top .user .item i{
+    font-size: 25px;
+    right: 0;
+}
+#header .tieude .sub-menu{
+	display: flex;
+	list-style: none;
+	position: relative;
+}
+#header .tieude .sub-menu  li{
+	margin: 0px 30px ;
+	padding: 0px 50px 50px 90px;
+	margin-top: 50px;
+	font-weight: 600;
+}
+#header .tieude .sub-menu  li::after{
+	content: " ";
+	top: -30px;
+	left: 26.5px;
+	
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-bottom: 1px solid black;
+}
+#header .tieude table tr td {
+	margin: 0px 30px ;
+	padding: 0px 50px 50px 120px;
+}
+#header .tieude table tr td .show{
+	border-radius: 50px;
+}
+
+
+
+
